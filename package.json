@@ -6,7 +6,7 @@
     "start": "cd client && npm install && npm run build && cd ../server && npm install && node app.js",
     "server": "cd server && node app.js",
     "dev": "concurrently \"npm run server\" \"npm run start\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "build":"cd client && npm install && npm run build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
